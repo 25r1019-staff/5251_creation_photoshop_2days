@@ -1,0 +1,119 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { -webkit-text-size-adjust: 100%; }
+body { background: #ffffff; color: #222725; font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic Medium", "Yu Gothic", Meiryo, sans-serif; font-size: 0.94rem; line-height: 1.8; }
+a { color: #2e5245; text-decoration: none; }
+a:hover { text-decoration: underline; }
+a:focus-visible, button:focus-visible, input:focus-visible { outline: 2px solid #2e5245; outline-offset: 2px; }
+img { max-width: 100%; display: block; }
+.wrap { max-width: 800px; margin: 0 auto; padding: 0 16px; }
+
+.site-header { border-bottom: 1px solid #cdd3cf; }
+.site-header .wrap { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 16px; padding-top: 16px; padding-bottom: 14px; }
+.site-title { color: #222725; font-family: "Hiragino Mincho ProN", "Yu Mincho", "YuMincho", "Noto Serif JP", serif; font-weight: 600; letter-spacing: 0.04em; }
+.site-course { color: #6a716d; font-size: 0.74rem; letter-spacing: 0.02em; }
+.site-footer { margin-top: 64px; border-top: 1px solid #cdd3cf; padding: 20px 0 40px; color: #6a716d; font-size: 0.8rem; }
+
+main { padding-top: 40px; }
+h1, h2, h3 { font-family: "Hiragino Mincho ProN", "Yu Mincho", "YuMincho", "Noto Serif JP", serif; font-weight: 600; letter-spacing: 0.04em; }
+h1 { font-size: 2.1rem; line-height: 1.35; margin-bottom: 12px; }
+h2 { font-size: 1.35rem; margin-bottom: 16px; }
+h3 { font-size: 1.05rem; margin: 28px 0 12px; }
+p + p { margin-top: 8px; }
+.label { color: #6a716d; font-size: 0.74rem; letter-spacing: 0.16em; margin-bottom: 8px; }
+.lead { margin-bottom: 28px; }
+.client { color: #6a716d; margin-bottom: 24px; }
+.small { color: #6a716d; font-size: 0.8rem; margin-top: 8px; }
+.crumb { color: #6a716d; font-size: 0.8rem; margin-bottom: 24px; }
+.crumb span { margin: 0 6px; }
+
+.block { border-top: 1px solid #222725; padding-top: 28px; margin-top: 56px; }
+.block ul, .block ol { padding-left: 1.4em; }
+.block li + li { margin-top: 4px; }
+
+.meta { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid #222725; border-bottom: 1px solid #cdd3cf; margin: 8px 0 32px; }
+.meta div { padding: 12px 16px 12px 0; border-bottom: 1px solid #cdd3cf; }
+.meta div:nth-last-child(-n+3) { border-bottom: 0; }
+.meta dt { color: #6a716d; font-size: 0.74rem; letter-spacing: 0.08em; }
+.meta dd { font-weight: 600; font-variant-numeric: tabular-nums; }
+
+.steps { list-style: none; padding-left: 0 !important; counter-reset: step; }
+.steps li { position: relative; padding: 10px 0 10px 44px; border-bottom: 1px solid #cdd3cf; margin: 0 !important; }
+.steps li::before { counter-increment: step; content: counter(step, decimal-leading-zero); position: absolute; left: 0; top: 10px; color: #2e5245; font-weight: 600; font-variant-numeric: tabular-nums; letter-spacing: 0.04em; }
+
+.table-wrap { overflow-x: auto; }
+table.def { width: 100%; border-collapse: collapse; }
+table.def th, table.def td { text-align: left; vertical-align: top; padding: 13px 16px 13px 0; border-bottom: 1px solid #cdd3cf; }
+table.def th { width: 36%; font-weight: 600; }
+table.def tr:first-child th, table.def tr:first-child td { border-top: 1px solid #222725; }
+
+.notice { border-left: 3px solid #8a5a12; padding: 10px 0 10px 16px; margin-top: 8px; }
+.notice ul { padding-left: 1.2em; }
+.notice-info { border-left-color: #2e5245; margin: 0 0 8px; }
+.caution { border-left: 3px solid #8a5a12; padding: 6px 0 6px 12px; font-size: 0.88rem; margin-bottom: 12px; }
+
+.level { display: inline-flex; align-items: center; gap: 8px; font-weight: 600; white-space: nowrap; }
+.level .bars { display: inline-flex; gap: 3px; }
+.level i { display: block; width: 14px; height: 6px; background: #cdd3cf; }
+.level i.on { background: #2e5245; }
+
+.tabs { display: flex; flex-wrap: nowrap; overflow-x: auto; border-bottom: 1px solid #cdd3cf; margin-bottom: 12px; }
+.tab { flex: none; white-space: nowrap; appearance: none; background: none; border: 0; border-bottom: 2px solid transparent; margin-bottom: -1px; padding: 10px 14px; color: #6a716d; font: inherit; cursor: pointer; }
+.tab:hover { color: #222725; }
+.tab.is-active { color: #222725; font-weight: 600; border-bottom-color: #2e5245; }
+.filter { display: inline-flex; align-items: center; gap: 8px; color: #6a716d; font-size: 0.88rem; margin-bottom: 16px; cursor: pointer; }
+
+.cases { list-style: none; padding: 0 !important; border-top: 1px solid #222725; }
+.cases li { margin: 0 !important; border-bottom: 1px solid #cdd3cf; }
+.cases a { display: grid; grid-template-columns: 44px 1fr auto; gap: 16px; align-items: center; padding: 18px 0; color: #222725; }
+.cases a:hover { background: #f4f6f4; text-decoration: none; }
+.cases .num { color: #2e5245; font-weight: 600; font-variant-numeric: tabular-nums; letter-spacing: 0.04em; padding-left: 4px; }
+.cases .kind { display: block; color: #6a716d; font-size: 0.74rem; letter-spacing: 0.16em; }
+.cases .ttl { display: block; font-family: "Hiragino Mincho ProN", "Yu Mincho", "YuMincho", "Noto Serif JP", serif; font-weight: 600; font-size: 1.05rem; line-height: 1.5; }
+.cases .sub { display: block; color: #6a716d; font-size: 0.8rem; font-variant-numeric: tabular-nums; }
+.cases .side { display: flex; flex-direction: column; align-items: flex-end; gap: 6px; padding-right: 4px; }
+.cases .more { color: #2e5245; font-size: 0.8rem; }
+.empty { color: #6a716d; padding: 16px 0; }
+
+.btn { display: inline-block; background: #2e5245; color: #ffffff; border: 1px solid #2e5245; border-radius: 2px; padding: 10px 28px; font-size: 0.88rem; font-weight: 600; letter-spacing: 0.08em; }
+.btn:hover { background: #1f3a31; text-decoration: none; }
+.zip { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; margin: 16px 0 8px; }
+.zip .small { margin: 0; }
+.count { color: #6a716d; font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", Meiryo, sans-serif; font-size: 0.8rem; font-weight: 400; margin-left: 10px; letter-spacing: 0.02em; }
+
+.gallery { list-style: none; padding: 0 !important; display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 24px 16px; }
+.gallery li { margin: 0 !important; }
+.gallery .thumb { display: flex; align-items: center; justify-content: center; aspect-ratio: 4 / 3; background: #f4f6f4; border: 1px solid #cdd3cf; overflow: hidden; }
+.gallery .thumb img { max-height: 100%; object-fit: contain; }
+.gallery a:hover .thumb { border-color: #2e5245; }
+.gallery .fname { display: block; margin-top: 6px; font-family: "SFMono-Regular", Consolas, Menlo, monospace; font-size: 0.78rem; overflow-wrap: anywhere; }
+.gallery .fmeta { display: block; color: #6a716d; font-size: 0.74rem; line-height: 1.6; }
+
+.links { list-style: none; padding: 0 !important; }
+.links li { padding: 8px 0; border-bottom: 1px solid #cdd3cf; margin: 0 !important; }
+.links .url { display: block; color: #6a716d; font-size: 0.74rem; overflow-wrap: anywhere; }
+
+.checklist { list-style: none; padding: 0 !important; border-top: 1px solid #222725; }
+.checklist li { border-bottom: 1px solid #cdd3cf; margin: 0 !important; }
+.checklist label { display: flex; gap: 12px; align-items: flex-start; padding: 12px 0; cursor: pointer; }
+.checklist input { width: 18px; height: 18px; margin-top: 4px; flex: none; accent-color: #2e5245; }
+.checklist input:checked + span { color: #6a716d; text-decoration: line-through; }
+
+.pager { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 64px; border-top: 1px solid #222725; }
+.pager a { padding: 16px 0; color: #222725; font-weight: 600; line-height: 1.6; }
+.pager a span { display: block; color: #6a716d; font-size: 0.74rem; font-weight: 400; letter-spacing: 0.08em; }
+.pager .next { text-align: right; }
+
+@media (max-width: 600px) {
+  h1 { font-size: 1.6rem; }
+  .meta { grid-template-columns: repeat(2, 1fr); }
+  .meta div:nth-last-child(-n+3) { border-bottom: 1px solid #cdd3cf; }
+  .meta div:nth-last-child(-n+2) { border-bottom: 0; }
+  .cases a { grid-template-columns: 32px 1fr; }
+  .cases .side { grid-column: 2; flex-direction: row; justify-content: space-between; align-items: center; }
+  table.def th, table.def td { display: block; width: 100%; padding-right: 0; }
+  table.def th { padding-bottom: 0; border-bottom: 0; }
+  table.def tr:first-child td { border-top: 0; }
+  .gallery { grid-template-columns: repeat(2, 1fr); }
+  .pager { grid-template-columns: 1fr; gap: 0; }
+  .pager .next { text-align: left; border-top: 1px solid #cdd3cf; }
+}
